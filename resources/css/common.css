@@ -1,0 +1,135 @@
+/* デフォルト設定の変更 */
+/* cardの余白削除 */
+.card-user .card-body {
+    min-height: 100px;
+}
+
+/* label色調整 */
+.card label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+/* form項目内の文字色 */
+.form-control{
+  color:#000000
+}
+
+/* 文字数が多いタイトルのSP版サイズ調整 */
+@media screen and (max-width: 991px){
+  .navbar-wrapper span.title14{
+    font-size: 14px;
+  }
+}
+
+.form-control{
+  max-height: 40px;
+}
+
+/* ライブラリ設定の変更 */
+/* disableのチェックボックス色調整 */
+.icheckbox_minimal-blue.checked.disabled {
+  background-position: -40px 0;
+}
+
+.iradio_minimal-blue.checked.disabled {
+  background-position: -140px 0;
+}
+
+div.dataTables_info{
+  text-align: left !important;
+}
+
+.chosen-select {
+  max-height: 40px;
+}
+
+.chosen-container{
+  min-width: 100% !important;
+}
+
+
+/* 追加クラス */
+.check{
+  margin-top: 5px;
+}
+
+.check label{
+  margin-right: 10px;
+}
+
+.btn-mini{
+  padding: 5px 15px 5px 15px !important;
+}
+
+.red{
+  color: red;
+}
+
+.modal-mini{
+  max-width:600px
+}
+
+.fontbig{
+  font-size: 1.8em;
+  font-weight: bold;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.fontmini{
+  font-size: 0.25em;
+}
+
+.leftlogo{
+  font-size: 1.4em;
+}
+
+.mt-70{
+  margin-top: 70px !important;
+}
+
+.none{
+  display: none;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.checkedRow{
+  background-color: #84ffff !important;
+}
+
+.scrapper{
+  background-color: #ffd1ff !important;
+}
+
+.derivery{
+  background-color: #c6ffe2 !important;
+}
+
+.stockyard{
+  background-color: #ffbcbc !important;
+}
+
+.equal{
+  background-color: rgb(247, 125, 95) !important;
+}
+
+.btn-long{
+  min-width: 180px;
+}
+
+.iconmini{
+  max-width: 20px;
+}
+
+.login-container{
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+div.cas-07 tr.found-case-no {
+  background-color: #ffff8e;
+}

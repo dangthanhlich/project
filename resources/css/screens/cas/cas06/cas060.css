@@ -1,0 +1,32 @@
+.btn-search-060 {
+    margin-top: 40px;
+}
+
+.video-screenshot {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
+.btn-camera-action {
+    margin-top: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.btnChangeCamera {
+    background-color: #b0bfbd !important;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.modal-dialog{
+    max-width: 100% !important; 
+}
+
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+}

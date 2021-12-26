@@ -1,0 +1,22 @@
+.error {
+    color: red;
+}
+
+.validate-message {
+    margin-top: -25px;
+}
+
+span.remove-picture i {
+    cursor: pointer;
+    color: #b4b2b0;
+}
+
+#camera-screen {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: auto;
+}
+
+.modal-body {
+    padding: 0px 0px !important;
+}

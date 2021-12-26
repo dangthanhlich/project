@@ -1,0 +1,21 @@
+.table tbody tr td {
+    overflow: visible !important;
+}
+#add-car-no {
+    vertical-align: baseline !important;
+}
+#case-picture-2-error {
+    text-align: center !important;
+}
+.is-hidden {
+    display: none;
+}
+#case-picture-2-error {
+    margin-bottom: -20px;
+}
+.fontmini {
+    font-size: 0.7em !important;
+}
+.modal-dialog{
+    max-width: 100% !important; 
+}

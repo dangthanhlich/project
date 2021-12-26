@@ -1,0 +1,142 @@
+/* body {
+    font-family:'PingFang SC' !important;
+} */
+
+.error-message {
+    color: red;
+    text-align: left;
+}
+
+.navbar .navbar-nav .nav-link {
+    text-transform: unset !important;
+}
+
+.table-responsive {
+    overflow: auto !important;
+}
+
+.table tbody tr td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.logo-image-big img {
+    /* height: 190px; */
+    display: block;
+    /* margin: 0 auto; */
+}
+
+.content {
+    min-height: calc(100vh - 93px) !important;
+}
+
+#pagination-box {
+    position: sticky;
+    bottom: 0;
+    z-index: 9;
+    background-color: #fff;
+}
+
+.pagination-border-box {
+    border: 1px solid rgba(0,0,0,.125) !important;
+    padding-top: 15px !important;
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+}
+
+.not-click {
+    pointer-events: none !important;
+    cursor: default !important;
+}
+
+#loading {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0.7;
+    background-color: #fff;
+    z-index: 99;
+}
+
+#loading-image {
+    position: absolute;
+    top: 100px;
+    left: 240px;
+    z-index: 100;
+}
+
+.lds-dual-ring {
+    margin: 0 auto;
+    position: absolute;
+    z-index: 100;
+    top: calc(50% - 2px);
+    left: calc(50% - 2px);
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid rgb(151, 148, 148);
+    border-color: rgb(151, 148, 148) transparent rgb(151, 148, 148) transparent;
+    -webkit-animation: lds-dual-ring 1.2s linear infinite;
+            animation: lds-dual-ring 1.2s linear infinite;
+}
+
+.error-container {
+    margin-top: 20vh;
+}
+.error-body {
+    position: relative;
+}
+.error-code {
+    font-size: 196px;
+    opacity: .1;
+    font-weight: bolder;
+    text-align: center;
+    color: rgba(64,64,64,.6);
+}
+.error-text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    text-align: center;
+}
+.error-text-title {
+    font-size: 2.2rem;
+}
+.error-text-subtitle {
+    font-size: 1.2rem;
+}
+
+@-webkit-keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+

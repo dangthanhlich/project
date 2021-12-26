@@ -1,0 +1,19 @@
+.table{
+    text-align: left;
+    width: 100% !important;
+    overflow-x: scroll;
+    table-layout: fixed;
+    /*white-space: nowrap;*/
+    -webkit-overflow-scrolling: touch;
+  }
+
+.table tbody tr:hover{
+    background-color: #f7dfc3fa;
+  }
+
+.modal{
+  z-index: 1053 !important;
+  }
+.modal-dialog{
+  max-width:85% !important; 
+  }

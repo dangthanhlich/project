@@ -1,0 +1,61 @@
+# For more information: https://laravel.com/docs/sail
+version: '3'
+services:
+    ars-web:
+        container_name: ars-web
+        build:
+            context: .
+            dockerfile: Dockerfile
+            args:
+                user: bw
+                uid: 1000
+        # image: ars-web
+        ports:
+            - '${APP_PORT:-80}:80'
+        volumes:
+            - "/var/log/docker-log/:/var/www/html/ars-web/storage/logs"
+        networks:
+            - ars-web-net
+
+    ars-web-dev:
+        container_name: ars-web-dev
+        build:
+            context: .
+            dockerfile: Dockerfile.dev
+            args:
+                user: bw
+                uid: 1000
+        # image: ars-web-dev
+        ports:
+            - '${APP_PORT:-80}:80'
+        volumes:
+            - "./:/var/www/html/ars-web"
+            - "/var/log/docker-log/:/var/www/html/ars-web/storage/logs"
+        networks:
+            - ars-web-net
+
+    mysql:
+        # platform: linux/x86_64
+        image: 'mysql:8.0'
+        ports:
+            - '${FORWARD_DB_PORT:-3306}:3306'
+        environment:
+            MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
+            MYSQL_DATABASE: '${DB_DATABASE}'
+            MYSQL_USER: '${DB_USERNAME}'
+            MYSQL_PASSWORD: '${DB_PASSWORD}'
+            MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+        volumes:
+            - 'sailmysql:/var/lib/mysql'
+        networks:
+            - ars-web-net
+        healthcheck:
+            test: ["CMD", "mysqladmin", "ping", "-p${DB_PASSWORD}"]
+            retries: 3
+            timeout: 5s
+networks:
+    ars-web-net:
+        driver: bridge
+volumes:
+    sailmysql:
+        driver: local
